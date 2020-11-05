@@ -4,7 +4,7 @@
 POST /jogo/{id}/jogada/
 {
     "piece_code": "",
-    "location": "f3"
+    "square": "f3"
 }
 auth 
     B
