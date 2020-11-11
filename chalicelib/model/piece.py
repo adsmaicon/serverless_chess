@@ -3,6 +3,9 @@
 Returns:
     [type]: [description]
 """
+from chalicelib.model.pawn import Pawn
+from chalicelib.model.king import King
+
 
 class Piece:
     """[summary]
@@ -12,13 +15,16 @@ class Piece:
         """[summary]
         """
         self.codes = {
-            'K': "King",
+            'K': King(),
             "Q": "Queen",
             "R": "Rook",
             "B": "Bishop",
             "N": "Knight",
-            "": "Pawn"
+            "": Pawn()
         }
+
+    def get_piece(self, code):
+        return self.codes[code.strip()]
 
     def code_validator(self, code):
         """[summary]
@@ -31,8 +37,8 @@ class Piece:
         """
         return code.strip() in self.codes
 
-    def position_validator(self, square):
+    def position_validator(self, oring, destination):
         """
         docstring
         """
-        return square
+        pass

@@ -30,6 +30,7 @@ class Board:
         and square[0].upper() in self.square[0]
         and int(square[1]) in self.square[1])
 
+
     def position_validator(self, square):
         """
         docstring
