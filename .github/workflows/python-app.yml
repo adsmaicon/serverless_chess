@@ -28,7 +28,3 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Python Pylin GitHub Action
-      uses: fylein/python-pylint-github-action@v1
-      with:
-        args: pylint chalicelib
